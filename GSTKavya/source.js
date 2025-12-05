@@ -648,7 +648,7 @@ async function getAuthorization(stateManager) {
     });
     const request = App.createRequest({
         url: `${kavitaAPI.url}/Plugin/authenticate`,
-        param: `?apiKey=${kavitaAPI.key}&pluginName=Kavya`,
+        param: `?apiKey=${kavitaAPI.key}&pluginName=GSTKavya`,
         method: 'POST'
     });
     const response = await manager.schedule(request, 1);
@@ -670,7 +670,7 @@ exports.getOptions = getOptions;
 },{}],64:[function(require,module,exports){
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Kavya = exports.KavyaInfo = void 0;
+exports.GSTKavya = exports.GSTKavyaInfo = void 0;
 const types_1 = require("@paperback/types");
 const Settings_1 = require("./Settings");
 const Common_1 = require("./Common");
@@ -681,12 +681,12 @@ const sortHelper = (a, b) => {
         return a.chapNum === b.chapNum ? a._index - b._index : a.chapNum - b.chapNum;
     return a.volume === 0 || b.volume === 0 ? b.volume - a.volume : a.volume - b.volume;
 };
-exports.KavyaInfo = {
+exports.GSTKavyaInfo = {
     version: '1.3.6',
-    name: 'GST-Kavya',
+    name: 'GSTKavya',
     icon: 'icon.png',
-    author: 'GST-Main',
-    authorWebsite: 'https://github.com/GST-Main',
+    author: 'GST',
+    authorWebsite: 'https://github.com/ACK72',
     description: 'Kavita client extension for Paperback',
     contentRating: types_1.ContentRating.EVERYONE,
     websiteBaseURL: 'https://www.kavitareader.com/',
@@ -698,7 +698,7 @@ exports.KavyaInfo = {
     ],
     intents: types_1.SourceIntents.COLLECTION_MANAGEMENT | types_1.SourceIntents.HOMEPAGE_SECTIONS | types_1.SourceIntents.MANGA_CHAPTERS | types_1.SourceIntents.MANGA_TRACKING | types_1.SourceIntents.SETTINGS_UI
 };
-class Kavya {
+class GSTKavya {
     constructor() {
         this.stateManager = App.createSourceStateManager();
         this.cacheManager = new CacheManager_1.CacheManager();
@@ -1192,7 +1192,7 @@ class Kavya {
         }
     }
 }
-exports.Kavya = Kavya;
+exports.GSTKavya = GSTKavya;
 
 },{"./CacheManager":62,"./Common":63,"./Search":65,"./Settings":66,"@paperback/types":61}],65:[function(require,module,exports){
 "use strict";
