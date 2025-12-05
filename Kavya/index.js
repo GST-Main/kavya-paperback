@@ -683,10 +683,10 @@ const sortHelper = (a, b) => {
 };
 exports.KavyaInfo = {
     version: '1.3.6',
-    name: 'Kavya',
+    name: 'GST-Kavya',
     icon: 'icon.png',
-    author: 'ACK72',
-    authorWebsite: 'https://github.com/ACK72',
+    author: 'GST-Main',
+    authorWebsite: 'https://github.com/GST-Main',
     description: 'Kavita client extension for Paperback',
     contentRating: types_1.ContentRating.EVERYONE,
     websiteBaseURL: 'https://www.kavitareader.com/',
