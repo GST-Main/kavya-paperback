@@ -683,7 +683,7 @@ const sortHelper = (a, b) => {
 };
 exports.KavyaInfo = {
     version: '1.3.6',
-    name: 'Kavya',
+    name: 'GST-Kavya',
     icon: 'icon.png',
     author: 'ACK72',
     authorWebsite: 'https://github.com/ACK72',
